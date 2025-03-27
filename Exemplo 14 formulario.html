@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 14 HTML - Formulários</title>
+</head>
+
+<body>
+    <div>
+        <h1>Exemplo 14 HTML - Formulários</h1>
+        <p>Os formulários HTML são uma principais formas de se interagir com aplicações web. Esses formulários utilizam
+            diversos componentes que melhorarão a experiência do usuário.</p>
+        <p>Para trabalhar com formulários devemos usar a tag <strong><form> </strong> em conjunto comoutras tags
+            que vão representar os componentes de formulários, tais como: labels(rotúlos), inputs(caixa de texto),
+            botões, elementos de checagem, de seleção de ntre outros componentes. Neste exemplo, demonstraremos o uso
+            dos métodos Get e Post</p>
+        <h2>Métodos do Protocolo HTTP</h2>
+        <h2>Get</h2>
+        <p>Quando trabalhamoscom a criação de formulários html, nós deveremos na parte das vezes utilizar o protocolo de
+            rede http, esse protocolo possui vários métodos que são utilizados para facilitar o processo de comunicação
+            entre o cliente e o servidor.</p>
+        <p>O método GET é aquele que anexa os dados do formulário à uma url, esses dados do formulários são vísíveis na
+            barra de endereço do navegador.</p>
+        <p>É importante saber que este método não recomendado para operções de inclusão, pois os dados vão aprecer para
+            qualquer pessoa,o que pode ser inseguro.</p>
+        <h2>Post</h2>
+        <p>Já o método POST é aquele que envia os dados para o servidor no corpo da página. Essa informações não são
+            vísives par o cliente sendo um pouco mais seguras que quando utilizamos o método GET.</p>
+    </div>
+    <div>
+        <h2>Exemplo de uso do Form</h2>
+       <form action="paginadestino.php" method="post">
+        <div>
+            <label for="">Login</label><br>
+            <input type="text" name="txtNameLogin" id="txtLogin">
+        </div>
+        <br>
+        <div>
+            <label for="">Senha</label><br>
+            <input type="password" name="txtNameSenha" id="txtSenha">
+        </div> 
+        <br>
+        <div>
+            <button type="submit">Acessar</button>
+        </div>
+
+
+       </form>
+    </div>
+</body>
+
+</html>
