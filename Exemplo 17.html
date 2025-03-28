@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 17</title>
+</head>
+<body>
+
+    <form action="paginaDestino" method="post">
+        <table width="572">
+            <tr>
+                <td>
+        <fieldset>
+            <legend>Cadastro</legend>
+            
+            
+            <div>
+                <label for="txtNome">Nome</label><br>
+                <input type="text" name="txtnome" id="txtNome" required>
+            </div>
+            
+            
+
+            <div>
+                <label for="txtEndereco">Endereço</label><br>
+                <input type="text" name="txtEndereco" id="txtEndereco" required>
+            </div>
+
+            
+
+            <div>
+                <label for="txtCidade">Cidade</label><br>
+                <input type="text" name="txtCidade" id="txtCidade" required>
+            </div>
+
+            
+
+            <div>
+                <label for="estado">Estado</label><br>
+                <select name="estado" id="estado">
+                    <option value="1">Acre</option>
+                    <option value="2">Alagoas</option>
+                    <option value="3">Amapá</option>
+                    <option value="4">Amazonas</option>
+                    <option value="5">Bahia</option>
+                    <option value="6">Ceará</option>
+                    <option value="7">Distrito Federal</option>
+                    <option value="8">Espírito Santo</option>
+                    <option value="9">Goiás</option>
+                    <option value="10">Maranhão</option>
+                    <option value="11">Mato Grosso</option>
+                    <option value="12">Mato Grosso do Sul</option>
+                    <option value="13">Minas Gerais</option>
+                    <option value="14">Pará</option>
+                    <option value="15">Paraíba</option>
+                    <option value="16">Paraná</option>
+                    <option value="17">Pernambuco</option>
+                    <option value="18">Piauí</option>
+                    <option value="19">Rio de Janeiro</option>
+                    <option value="20">Rio Grande do Norte</option>
+                    <option value="21">Rio Grande do Sul</option>
+                    <option value="22">Rondônia</option>
+                    <option value="23">Roraima</option>
+                    <option value="24">Santa Catarina</option>
+                    <option value="25">São Paulo</option>
+                    <option value="26">Sergipe</option>
+                    <option value="27">Tocantins</option>
+                </select>
+            </div>
+
+        </fieldset>
+        </td>
+    </tr>
+</table>
+        <table width="200">
+            <tr>
+                <td>   
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            
+
+            <label>Natureza do Cargo</label><br>
+            <input type="radio" name="rdCargo" id="gerencia" value="1">
+            <label for="gerencia">Gerência</label>
+
+            <input type="radio" name="rdCargo" id="financeiro" value="2">
+            <label for="financeiro">Financeiro</label>
+
+            <input type="radio" name="rdCargo" id="recepcao" value="3">
+            <label for="recepcao">Recepção</label>
+
+            <input type="radio" name="rdCargo" id="administrativo" value="4">
+            <label for="administrativo">Administrativo</label>
+
+            <input type="radio" name="rdCargo" id="juridico" value="5">
+            <label for="juridico">Jurídico</label>
+
+            <br><br>
+
+            <label>Área de Interesse</label><br>
+            <input type="checkbox" name="areaInteresse[]" id="computacao" value="computacao">
+            <label for="computacao">Computação</label>
+
+            <input type="checkbox" name="areaInteresse[]" id="biologia" value="biologia">
+            <label for="biologia">Biologia</label>
+
+            <input type="checkbox" name="areaInteresse[]" id="meioAmbiente" value="meioAmbiente">
+            <label for="meioAmbiente">Meio Ambiente</label>
+
+            <input type="checkbox" name="areaInteresse[]" id="engenharia" value="engenharia">
+            <label for="engenharia">Engenharia</label>
+
+            <input type="checkbox" name="areaInteresse[]" id="historia" value="historia">
+            <label for="historia">História</label>
+
+            <br><br>
+
+            <div>
+                <label for="txtMinicurriculo">Mini-currículo</label><br>
+                <textarea name="txtMinicurriculo" id="txtMinicurriculo" cols="70" rows="10"></textarea>
+            </div>
+
+            <br>
+
+            <div>
+                <button type="submit">Enviar</button>
+                <button type="reset">Limpar</button>
+            </div>
+
+        </fieldset>
+      </td>
+    </tr>
+ </table>
+    </form>
+
+</body>
+</html>
