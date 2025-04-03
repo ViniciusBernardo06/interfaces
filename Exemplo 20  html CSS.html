@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 20 - HTML CSS</title>
+    <style>
+        body{
+            margin: 40px;
+            padding: 20px;
+        }
+        h1{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color: deeppink;
+        }
+        .div1{
+            border-left: solid red 6px;
+            border-radius: 15px;
+            margin: 25px;
+            padding: 10px;
+            box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+        }
+        .div2{
+            border-left: solid blue 6px;
+            border-radius: 15px;
+            margin: 25px;
+            padding: 10px;
+            box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+        }
+        #div3{
+            border-left: solid green 6px;
+            margin: 25px;
+            padding: 10px;
+            box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+        }
+        #paragrafo{
+            background-color: chartreuse;
+            font-size: 2rem;
+            font-weight: 800;
+            text-decoration: double;
+        }
+        #estiloButton{
+            background-color: deeppink;
+            color: aliceblue;
+            margin: 20px;
+            padding: 15px;
+            width: 150px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        input{
+            display: block;
+            width: 150px;
+        }
+        label{
+            font-weight: bold;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="div1">
+        <h1>Exemplo 20 HTML - CSS</h1>
+        <h2>Visao Geral sobre o CSS</h2>
+        <p>CSS é um acrônimo para folhas de estilo em cascata. Essas técnica visa personalizar, estilizar um documento HTML. Para isso, usamos regras CSS, que representam uma estrutura que define como os elementos selecionados devem ser estilizados. Essa regra é composta pelas seguintes partes:</p>
+        <ul>
+            <li><strong>Seletor</strong>Indica quais elementos serão afetados pelo estilo definido. </li>
+            <li><strong>Bloco de declaração</strong> É o bloco composto por propriedades e valores, esse bloco será aplicado ao elemento html. </li>
+        </ul>
+    </div>
+    <div class="div2">
+        <h1>Tipos de seletores</h1>
+        <p>Em CSS seletores são padrões usados para selecionar e estilizar os elementos HTML em uma página web. Eles definem quais elementos receberção as regras de estilos que serão declaradas dentro das chaves. Possuímos vários tipos de seletores, os principais são:</p>
+        <h2>Seletores de ID</h2>
+        <p id="paragrafo">O seletor de ID é aquele que aplica regra css a um componente html que tenha um atributo id no componente html. Este seletor de id deve ser aplicado a um unico elemento html, haja vista que o id deve ser único. Este seletor tem prioridade sobre os demais seletores(de classse e de tipo)</p>
+        <p>Este seletor sempre começara com um "#", seguido nome do seletor e suas propriedades e valores .</p>
+        <p>Neste Exemplo usamos seletores de id,de classe e tipo para estilizar o documento html.</p>
+    </div>
+    <div id="div3">
+        <h3>Exemplo de formulário usando seletores css de ID</h3>
+        <div>
+            <label for="">Nome</label>
+            <input type="text" name="txtNome" id="txtNome">
+        </div>
+        <div>
+            <label for="">Data de Nascimento</label>
+            <input type="date" name="txtDataNascimento" id="txtNasccimento">
+        </div>
+        <div>
+            <label for="">Ano de Nascimento</label>
+            <input type="number" name="txtAnoNascimento" id="txtAnoNascimento">
+        </div>
+        <div>
+            <button type="submit" id="estiloButton">Enviar</button>
+        </div>
+    </div>    
+</body>
+</html>
